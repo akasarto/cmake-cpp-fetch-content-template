@@ -12,10 +12,11 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS   ON) # https://cmake.org/cmake/help/latest/va
 set(CMAKE_CXX_EXTENSIONS            OFF) # https://cmake.org/cmake/help/latest/variable/CMAKE_CXX_EXTENSIONS.html
 
 # Setup fetch content
+
 include(FetchContent)
-# set(FETCHCONTENT_BASE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/deps
-#     CACHE PATH "Custom dependencies folder." FORCE
-# )
+set(FETCHCONTENT_BASE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/deps
+    CACHE PATH "Custom dependencies folder." FORCE
+)
 
 project("${PRIMARY_OUTPUT_NAME}" VERSION 1.0.0 LANGUAGES C CXX)
 
